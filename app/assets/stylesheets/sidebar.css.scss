@@ -7,7 +7,7 @@
   color: $white;
   text-align: center;
   .logo {
-    padding: 40px 0;
+    padding: 50px 0;
     font-size: 1.45rem;
     background: $dark;
   }
@@ -16,11 +16,14 @@
     float: left;
     width: inherit;
     &:hover {
-      background: $dark;
+      background: $highlight-dark;
     }
   }
   .sign-out {
-    margin-top: 231%;
+    margin-top: 211%;
+    &:hover {
+      background: $dark;
+    }
   }
   .link i {
     float: left;
