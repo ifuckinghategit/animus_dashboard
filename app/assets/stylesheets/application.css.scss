@@ -14,6 +14,12 @@ $youtube-dark: #b31217;
   box-sizing: border-box;
 }
 
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    margin: 100px;
+}
+
 .clearfix:before,
 .clearfix:after {
   content: "";
@@ -35,7 +41,8 @@ $youtube-dark: #b31217;
 }
 
 .form {
-  padding-top: 30%;
+  padding: 30% 0;
+  text-align: center;
 }
 
 .youtube-btn {
@@ -48,4 +55,5 @@ $youtube-dark: #b31217;
   }
 }
 
+@import "main-navigation";
 @import "sidebar";

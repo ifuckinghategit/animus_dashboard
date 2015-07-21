@@ -11,7 +11,11 @@
 </head>
 <body>
 
-  <%= render 'layouts/sidebar' %>
+  <% if user_signed_in? %>
+    <%= render 'layouts/sidebar' %>
+  <% else%>
+    <%= render 'layouts/main_navigation' %>
+  <% end %>
 
   <div class="container">
     <% flash.each do |name, msg| %>

@@ -1,7 +1,7 @@
 <div id="sidebar_navigation" role="navigation">
   <div class="logo">Animus</div>
 
-    <%= link_to "#", class: "link" do %>
+    <%= link_to dashboard_index_path, class: "link" do %>
       <i class="fa fa-globe"></i><br>
       Overview <br>
     <% end %>
@@ -31,6 +31,10 @@
     <% end %>
 
     <% if user_signed_in? %>
+      <%= link_to edit_user_registration_path, class: "link account-settings" do %>
+        <i class="fa fa-cogs"></i>
+        Account Settings
+      <% end %>
       <%= link_to destroy_user_session_path, class: "link sign-out", method: :delete do %>
         <i class="fa fa-sign-out"></i><br>
         Sign Out
@@ -41,6 +45,4 @@
         Sign In
         <% end %>
     <% end %>
-
-      <!-- <li><%= link_to "Account Settings", edit_user_registration_path %></li> -->
 </div>

@@ -19,8 +19,15 @@
       background: $highlight-dark;
     }
   }
+  .account-settings {
+    margin-top: 100%;
+    &:hover {
+      background: $dark;
+    }
+  }
   .sign-out {
-    margin-top: 211%;
+    padding-top: 0;
+    margin-top: 23%;
     &:hover {
       background: $dark;
     }

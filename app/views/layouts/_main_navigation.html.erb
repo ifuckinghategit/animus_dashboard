@@ -1,0 +1,19 @@
+<div id="main_navigation" role="navigation">
+  <div class="logo"><a href="/">Animus</a></div>
+
+        <%= link_to "About", "#", class: "main-link" %>
+        <%= link_to "Benefits", '#', class: "main-link" %>
+        <%= link_to "Contact", '#', class: "main-link" %>
+
+    <% if user_signed_in? %>
+      <%= link_to destroy_user_session_path, class: "main-sign-out", method: :delete do %>
+        <i class="fa fa-sign-out"></i><br>
+        Sign Out
+      <% end %>
+      <% else %>
+        <%= link_to new_user_session_path, class: "main-link main-sign-out" do %>
+        <i class="fa fa-sign-in"></i><br>
+        Sign In
+        <% end %>
+    <% end %>
+</div>
