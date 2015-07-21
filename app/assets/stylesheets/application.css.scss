@@ -30,9 +30,7 @@ $youtube-dark: #b31217;
 .notice, .alert {
   text-align: center;
   padding: 1em 0;
-  background: $highlight;
-  color: $white;
-  box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+  color: $dark;
 }
 
 .form {

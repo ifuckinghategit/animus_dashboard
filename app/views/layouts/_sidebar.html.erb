@@ -30,8 +30,17 @@
       Revenue <br>
     <% end %>
 
-    <%= link_to destroy_user_session_path, class: "link sign-out", method: :delete do %>
-      <i class="fa fa-sign-out"></i><br>
-      Sign Out
+    <% if user_signed_in? %>
+      <%= link_to destroy_user_session_path, class: "link sign-out", method: :delete do %>
+        <i class="fa fa-sign-out"></i><br>
+        Sign Out
+      <% end %>
+      <% else %>
+        <%= link_to new_user_session_path, class: "link sign-out" do %>
+        <i class="fa fa-sign-in"></i><br>
+        Sign In
+        <% end %>
     <% end %>
+
+      <!-- <li><%= link_to "Account Settings", edit_user_registration_path %></li> -->
 </div>
