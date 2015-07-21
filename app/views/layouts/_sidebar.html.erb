@@ -1,0 +1,37 @@
+<div id="sidebar_navigation" role="navigation">
+  <div class="logo">Animus</div>
+
+    <%= link_to "#", class: "link" do %>
+      <i class="fa fa-globe"></i><br>
+      Overview <br>
+    <% end %>
+    <%= link_to "#", class: "link" do %>
+      <i class="fa fa-music"></i><br>
+      Music <br>
+    <% end %>
+    <%= link_to "#", class: "link" do %>
+      <i class="fa fa-bars"></i><br>
+      Leaderboard <br>
+    <% end %>
+    <%= link_to "#", class: "link" do %>
+      <i class="fa fa-wrench"></i><br>
+      Tools <br>
+    <% end %>
+    <%= link_to "#", class: "link" do %>
+      <i class="fa fa-users"></i><br>
+      Prospects <br>
+    <% end %>
+    <%= link_to "#", class: "link" do %>
+      <i class="fa fa-line-chart"></i><br>
+      Analytics <br>
+    <% end %>
+    <%= link_to "#", class: "link revenue" do %>
+      <i class="fa fa-usd"></i><br>
+      Revenue <br>
+    <% end %>
+
+    <%= link_to destroy_user_session_path, class: "link sign-out", method: :delete do %>
+      <i class="fa fa-sign-out"></i><br>
+      Sign Out
+    <% end %>
+</div>

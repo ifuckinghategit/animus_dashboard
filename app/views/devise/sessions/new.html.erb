@@ -1,0 +1,29 @@
+<div class="offset-by-four columns">
+  <div class="row">
+    <div class="form">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <button class="button-primary youtube-btn">
+          <i class="fa fa-youtube-play"></i>
+          Connect with YouTube
+        </button>
+      </div>
+
+        <div class="field">
+          <%= f.email_field :email, autofocus: true, placeholder: 'Enter your email' %>
+        </div>
+
+        <div class="field">
+          <%= f.password_field :password, autocomplete: "off", placeholder: 'Enter your password' %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "Log in" %>
+        </div>
+
+        <%= render "devise/shared/links" %>
+
+      <% end %>
+    </div>
+  </div>
+</div>

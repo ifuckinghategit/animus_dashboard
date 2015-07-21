@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animus</title>
+  <script src="//use.typekit.net/fmj8nhe.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <%= render 'layouts/sidebar' %>
+
+  <div class="container">
+    <% flash.each do |name, msg| %>
+     <%= content_tag(:div, msg, class: "alert alert-info #{name}") %>
+    <% end %>
+
+    <%= yield %>
+  </div>
+
+</body>
+</html>
