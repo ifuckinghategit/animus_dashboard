@@ -12,11 +12,7 @@
 </head>
 <body>
 
-  <% if user_signed_in? %>
-    <%= render 'layouts/sidebar' %>
-  <% else%>
-    <%= render 'layouts/main_navigation' %>
-  <% end %>
+  <%= render 'layouts/sidebar' %>
 
   <div class="container">
     <div id="flash">

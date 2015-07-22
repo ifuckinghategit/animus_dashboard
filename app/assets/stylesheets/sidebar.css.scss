@@ -7,8 +7,11 @@
   color: $white;
   text-align: center;
   .logo {
-    padding: 50px 0;
-    font-size: 1.45rem;
+    height: 120px;
+    width: inherit;
+    padding: 18px;
+    background: url("/assets/images/animus_logo.png") center center;
+    background-size: cover;
     background: $dark;
   }
   .link {
@@ -35,7 +38,7 @@
   .link i {
     float: left;
     font-size: 1.6rem;
-    margin: 10px auto;
+    margin: 13px auto;
     padding: 0 28px;
   }
   .revenue {
