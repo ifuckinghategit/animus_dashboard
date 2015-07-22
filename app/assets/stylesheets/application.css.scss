@@ -10,14 +10,18 @@ $border: #E9E9E9;
 $youtube: #cd201f;
 $youtube-dark: #b31217;
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 #page-content-wrapper {
     width: 100%;
     position: absolute;
     margin: 100px;
+}
+
+#page-content-dashboard {
+    width: inherit;
+    position: relative;
+    margin: 30px;
 }
 
 .clearfix:before,
@@ -26,13 +30,9 @@ $youtube-dark: #b31217;
   display: table;
 }
 
-.clearfix:after {
-  clear: both;
-}
+.clearfix:after { clear: both; }
 
-.hidden {
-  display: none;
-}
+.hidden { display: none; }
 
 .notice, .alert {
   text-align: center;
@@ -40,10 +40,7 @@ $youtube-dark: #b31217;
   color: $dark;
 }
 
-.form {
-  padding: 30% 0;
-  text-align: center;
-}
+.form { padding: 30% 0; text-align: center; }
 
 .youtube-btn {
   background: $youtube !important;
@@ -57,3 +54,4 @@ $youtube-dark: #b31217;
 
 @import "main-navigation";
 @import "sidebar";
+@import "dashboard";
