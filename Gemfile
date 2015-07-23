@@ -10,6 +10,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'devise', '~> 3.5.1'
+gem 'yt', '~> 0.25.1'
+gem 'google-api-client', '~> 0.8.6'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 

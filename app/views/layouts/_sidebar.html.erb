@@ -5,34 +5,35 @@
       <i class="fa fa-globe"></i><br>
       Overview <br>
     <% end %>
-    <%= link_to "#", class: "link" do %>
+    <%= link_to dashboard_music_path, class: "link" do %>
       <i class="fa fa-music"></i><br>
       Music <br>
     <% end %>
-    <%= link_to "#", class: "link" do %>
+    <%= link_to dashboard_leaderboard_path, class: "link" do %>
       <i class="fa fa-bars"></i><br>
       Leaderboard <br>
     <% end %>
-    <%= link_to "#", class: "link" do %>
+    <%= link_to dashboard_tools_path, class: "link" do %>
       <i class="fa fa-wrench"></i><br>
       Tools <br>
     <% end %>
-    <%= link_to "#", class: "link" do %>
+    <%= link_to dashboard_prospects_path, class: "link" do %>
       <i class="fa fa-users"></i><br>
       Prospects <br>
     <% end %>
-    <%= link_to "#", class: "link" do %>
+    <%= link_to dashboard_analytics_path, class: "link" do %>
       <i class="fa fa-line-chart"></i><br>
       Analytics <br>
     <% end %>
-    <%= link_to "#", class: "link revenue" do %>
+    <%= link_to dashboard_revenue_path, class: "link revenue" do %>
       <i class="fa fa-usd"></i><br>
       Revenue <br>
     <% end %>
 
+    <hr>
+
     <% if user_signed_in? %>
       <%= link_to edit_user_registration_path, class: "link account-settings" do %>
-        <i class="fa fa-cogs"></i>
         Account Settings
       <% end %>
       <%= link_to destroy_user_session_path, class: "link sign-out", method: :delete do %>

@@ -6,10 +6,15 @@
   position: fixed;
   color: $white;
   text-align: center;
+  hr {
+    height: 1px;
+    background: $highlight-dark;
+    margin-top: 30px;
+  }
   .logo {
     height: 120px;
     width: inherit;
-    padding: 18px;
+    padding: 25px;
     background: url("/assets/images/animus_logo.png") center center;
     background-size: cover;
     background: $dark;
@@ -38,7 +43,7 @@
   .link i {
     float: left;
     font-size: 1.6rem;
-    margin: 13px auto;
+    margin: 10px auto;
     padding: 0 28px;
   }
   .revenue {

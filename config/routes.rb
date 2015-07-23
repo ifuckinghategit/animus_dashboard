@@ -1,12 +1,18 @@
 Rails.application.routes.draw do
 
-  get 'dashboard/overview' => 'dashboard#overview'
-
   devise_for :users
 
   devise_scope :user do
     root :to => 'devise/sessions#new'
   end
+
+  get 'dashboard/overview' => 'dashboard#overview'
+  get 'dashboard/music' => 'dashboard#music'
+  get 'dashboard/leaderboard' => 'dashboard#leaderboard'
+  get 'dashboard/tools' => 'dashboard#tools'
+  get 'dashboard/prospects' => 'dashboard#prospects'
+  get 'dashboard/analytics' => 'dashboard#analytics'
+  get 'dashboard/revenue' => 'dashboard#revenue'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

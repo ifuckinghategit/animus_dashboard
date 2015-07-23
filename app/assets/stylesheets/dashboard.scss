@@ -1,5 +1,6 @@
 .total-views-count,
 .total-subscribers-count,
+.total-videos-count,
 .total-revenue-count, {
   text-align: center;
   color: $white;
@@ -19,6 +20,11 @@
 .total-subscribers-count {
   p { background: #edb007; }
   h6 { background: #F5B400; }
+}
+
+.total-videos-count {
+  p { background: #3775eb; }
+  h6 { background: #3A7AF3; }
 }
 
 .total-revenue-count {
