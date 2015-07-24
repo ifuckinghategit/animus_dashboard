@@ -3,6 +3,10 @@
     <div class="form">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field">
+          <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+      </div>
+
+      <div class="field">
         <button class="button-primary youtube-btn">
           <i class="fa fa-youtube-play"></i>
           Connect with YouTube
