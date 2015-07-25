@@ -30,19 +30,21 @@
       Revenue <br>
     <% end %>
 
-    <% if user_signed_in? %>
-      <%= link_to edit_user_registration_path, class: "link account-settings" do %>
-        <i class="fa fa-gears"></i>
-        Account Settings
-      <% end %>
-      <%= link_to destroy_user_session_path, class: "link sign-out", method: :delete do %>
-        <i class="fa fa-sign-out"></i><br>
-        Sign Out
-      <% end %>
-      <% else %>
-        <%= link_to new_user_session_path, class: "link sign-out" do %>
-        <i class="fa fa-sign-in"></i><br>
-        Sign In
+    <div class="settings">
+      <% if user_signed_in? %>
+        <%= link_to edit_user_registration_path, class: "link account" do %>
+          <i class="fa fa-gears"></i>
+          Account Settings
         <% end %>
-    <% end %>
+        <%= link_to destroy_user_session_path, class: "link sign-out", method: :delete do %>
+          <i class="fa fa-sign-out"></i><br>
+          Sign Out
+        <% end %>
+        <% else %>
+          <%= link_to new_user_session_path, class: "link sign-out" do %>
+          <i class="fa fa-sign-in"></i><br>
+          Sign In
+          <% end %>
+      <% end %>
+    </div>
 </div>

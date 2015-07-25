@@ -1,6 +1,3 @@
-@import "normalize";
-@import "skeleton";
-
 $dark: #424652;
 $white: #fff;
 $light: #9a9da4;
@@ -12,17 +9,13 @@ $youtube-dark: #b31217;
 
 * { box-sizing: border-box; }
 
+@import "normalize";
+@import "skeleton";
+
 #page-content-wrapper {
     width: 100%;
     position: absolute;
     margin: 100px;
-}
-
-#page-content-dashboard {
-    width: inherit;
-    position: relative;
-    margin: 30px 10px;
-    width: 100%;
 }
 
 .clearfix:before,

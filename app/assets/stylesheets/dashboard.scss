@@ -4,6 +4,7 @@
 .total-revenue-count, {
   text-align: center;
   color: $white;
+  position: fixed;
   p { padding: 15px; font-size: 2.3rem; }
   h6 {
     margin-top: -25px;
@@ -13,21 +14,25 @@
 }
 
 .total-views-count {
+  position: relative;
   p { background: #d24236; }
   h6 { background: #DC4437; }
 }
 
 .total-subscribers-count {
+  position: relative;
   p { background: #edb007; }
   h6 { background: #F5B400; }
 }
 
 .total-videos-count {
+  position: relative;
   p { background: #3775eb; }
   h6 { background: #3A7AF3; }
 }
 
 .total-revenue-count {
+  position: relative;
   p { background: #119857; }
   h6 { background: #109D59; }
 }

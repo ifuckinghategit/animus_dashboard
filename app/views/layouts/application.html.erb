@@ -16,7 +16,8 @@
 
   <%= render 'layouts/sidebar' %>
 
-  <div class="container">
+    <button id="menu" class="button-primary">Menu</button>
+
     <div id="flash">
       <% flash.each do |name, msg| %>
        <%= content_tag(:div, msg, class: "alert alert-info #{name}") %>
@@ -24,14 +25,18 @@
     </div>
 
     <%= yield %>
-  </div>
 
 <script type="text/javascript">
   $(document).ready(function(){
     setTimeout(function(){
       $('#flash').fadeOut();
     }, 1000);
-   })
+  });
+
+   $("#menu").click(function(e) {
+       e.preventDefault();
+       $("#sidebar_navigation").toggleClass("toggled");
+   });
 </script>
 
 </body>

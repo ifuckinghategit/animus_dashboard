@@ -1,4 +1,5 @@
 #sidebar_navigation {
+  z-index: 999;
   top: 0;
   height: 100%;
   width: 100px;
@@ -6,11 +7,10 @@
   position: fixed;
   color: $white;
   text-align: center;
-  hr {
-    height: 1px;
-    background: $highlight-dark;
-    margin-top: 130px;
-  }
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   .logo {
     height: 120px;
     width: inherit;
@@ -22,39 +22,46 @@
   .link {
     padding: 10px 15px;
     float: left;
+    text-align: center;
     width: inherit;
+    .revenue {
+      padding: 5px 20px;
+    }
+    i {
+      font-size: 1.6rem;
+      margin: 0 auto;
+      padding: 10px 0;
+    }
     &:hover {
       background: $highlight-dark;
+      color: $white;
     }
   }
-  .account-settings {
-    margin-top: 100%;
-    font-size: 1.1rem;
-    &:hover {
-      background: $dark;
+  .settings {
+    width: inherit;
+    .account {
+      margin-top: 100%;
+      font-size: 1.1rem;
+      &:hover {
+        background: $dark;
+        color: $white;
+      }
+    }
+    .sign-out {
+      padding-top: 0;
+      margin-top: 23%;
+      font-size: 1.1rem;
+      &:hover {
+        background: $dark;
+        color: $white;
+      }
     }
   }
-  .sign-out {
-    padding-top: 0;
-    margin-top: 23%;
-    font-size: 1.1rem;
-    &:hover {
-      background: $dark;
-    }
-  }
-  .link i {
-    float: left;
-    font-size: 1.6rem;
-    margin: 10px auto;
-    padding: 0 28px;
-  }
-  .revenue {
-    padding: 5px 20px;
-  }
-  a {
-    color: $white;
-    text-decoration: none;
-    font-size: 1.3rem;
-    padding: 20px 0;
-  }
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 20px 0;
 }
